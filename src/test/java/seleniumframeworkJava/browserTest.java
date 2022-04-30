@@ -32,7 +32,11 @@ public class browserTest {
 	 	 driver.findElement(By.xpath("//input[@id='benzradio']")).click();
 	 	 driver.findElement(By.xpath("//input[@id='bmwradio']")).click();
 	 	 driver.findElement(By.id("benzradio")).click();
-	 	 driver.findElement(By.id("bmwradio")).click();
+	 	// driver.findElement(By.id("bmwradio")).click();
+	 	 
+driver.findElement(By.id("bmwradio")).click(); 	 
+	 	 
+	 	 
 	 	 
 	 	 
 	      
