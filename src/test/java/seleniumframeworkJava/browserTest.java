@@ -40,9 +40,9 @@ public class browserTest {
 //		  ChromeDriver driver  = new ChromeDriver();
 		  
 		  
-		  
+		  //testingg
 		  // for mac commond+SIft+O
-			/* Edit from Git
+			/*
 			 * Select SE=new Select(driver.findElement(By.id("multiple-select-example")));
 			 * // List<WebElement> list = SE.getOptions(); SE.selectByIndex(0);
 			 * SE.selectByIndex(1); SE.selectByIndex(2); SE.deselectByIndex(2);
@@ -57,13 +57,7 @@ public class browserTest {
 			 * ); System.setProperty("webdriver.gecko.driver",
 			 * projectPath+"\\drivers\\geckodriver\\geckodriver.exe"); FirefoxDriver driver
 			 * = new FirefoxDriver();
-			 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));
-			 */			
-		  
-		
-
-	 	 
-	 	 
+			 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));*/	 	 
 	 	 
 			/*
 			 * driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys(
