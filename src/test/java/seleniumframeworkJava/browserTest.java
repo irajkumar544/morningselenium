@@ -34,7 +34,7 @@ public class browserTest {
 	 	 driver.findElement(By.id("benzradio")).click();
 	 	// driver.findElement(By.id("bmwradio")).click();
 	 	 
-driver.findElement(By.id("bmwradio")).click(); 	 
+    driver.findElement(By.id("bmwradio")).click(); 	 
 	 	 
 	 	 
 	 	 
