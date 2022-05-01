@@ -1,6 +1,7 @@
 package seleniumframeworkJava;
 
 import java.time.Duration;
+
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +25,7 @@ public class browserTest {
 		  String projectPath=System.getProperty("user.dir");
 		  System.out.println(projectPath);
 		  
-	      
+		  //WebDriverManager.chromedriver().setup();
 			/*
 			 * Select SE=new Select(driver.findElement(By.id("multiple-select-example")));
 			 * // List<WebElement> list = SE.getOptions(); SE.selectByIndex(0);
@@ -34,16 +35,16 @@ public class browserTest {
 			 * driver.get("https://www.google.com/");
 			 * driver.findElement(By.name("q")).sendKeys("iphone12");
 			 */
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Rajkumar\\eclipse-workspace\\seleniumframeworkJava\\drivers\\geckodriver\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", projectPath+"\\drivers\\geckodriver\\geckodriver.exe");
-		FirefoxDriver  driver  = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));			
+		//System.setProperty("webdriver.gecko.driver", "/Users/shrutipatel/git/morningselenium/drivers/geckodrive/geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", projectPath+"\\drivers\\geckodriver\\geckodriver.exe");
+		//FirefoxDriver  driver  = new FirefoxDriver();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));			
 		  
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * projectPath+"\\drivers\\chromeDriver\\chromedriver.exe"); ChromeDriver driver
-		 * = new ChromeDriver();
-		 */
+		
+		  System.setProperty("webdriver.chrome.driver",
+		  "/Users/shrutipatel/git/morningselenium/drivers/chromeDriver/chromedriver"); ChromeDriver driver
+		 = new ChromeDriver();
+		
 		driver.get("https://courses.letskodeit.com/practice");
 		
 		driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys("seleniumClasses");
