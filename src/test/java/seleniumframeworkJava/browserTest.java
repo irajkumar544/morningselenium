@@ -16,7 +16,7 @@ import org.testng.Reporter;
 
 public class browserTest {
 	
-	// testing comments git commit test
+	// testing comments git commit test testing
 
 	public static void main(String[] args)
 	{
@@ -25,7 +25,11 @@ public class browserTest {
 		  System.setProperty("webdriver.chrome.driver",projectPath+"\\drivers\\chromeDriver\\chromedriver.exe"); 
 		  ChromeDriver driver  = new ChromeDriver(); 	
 		 
-	 	 driver.get("https://courses.letskodeit.com/practice");	 
+	 	 driver.get("https://courses.letskodeit.com/practice");		 
+	 
+
+
+
 	 	 driver.manage().window().maximize();
 	 	 
 	 	// driver.findElement(By.id("benzradio")).click();
@@ -34,28 +38,56 @@ public class browserTest {
 	 	 driver.findElement(By.id("benzradio")).click();
 	 	// driver.findElement(By.id("bmwradio")).click();
 	 	 
-    driver.findElement(By.id("bmwradio")).click(); 	 
-	 	 
-	 	 
-	 	 
-	 	 
-	      
-//		  System.setProperty("webdriver.chrome.driver",projectPath+"/drivers/chromeDriver/chromedriver.exe"); 
-//		  ChromeDriver driver  = new ChromeDriver();
-		  
-		  
-		  //testingg  editttttt   Branch Raj
-		  // for mac commond+SIft+O
-			/*
-			 * Select SE=new Select(driver.findElement(By.id("multiple-select-example")));
-			 * // List<WebElement> list = SE.getOptions(); SE.selectByIndex(0);
-			 * SE.selectByIndex(1); SE.selectByIndex(2); SE.deselectByIndex(2);
-			 * driver.findElement(By.id("bmwcheck")).click();
-			 * driver.findElement(By.id("hondacheck")).click();
-			 * driver.get("https://www.google.com/");
-			 * driver.findElement(By.name("q")).sendKeys("iphone12");
-			 */
-			/*
+           driver.findElement(By.id("bmwradio")).click(); 	 
+   
+           Select drpCar=new Select(driver.findElement(By.id("carselect")));
+           drpCar.selectByVisibleText("Benz");
+			
+			  Select SE=new Select(driver.findElement(By.id("multiple-select-example")));
+			  // List<WebElement> list = SE.getOptions(); 
+			  SE.selectByIndex(0);
+			  SE.selectByIndex(1); 
+			  SE.selectByIndex(2); 
+			  SE.deselectByIndex(2);
+			  driver.findElement(By.id("bmwcheck")).click();
+			  driver.findElement(By.id("hondacheck")).click();
+			  
+			  
+			  
+			  
+			  String originalWindow = driver.getWindowHandle();
+			  System.out.println(originalWindow); 
+			  assert driver.getWindowHandles().size() == 1;
+			  driver.findElement(By.id("openwindow")).click(); 
+			
+			  
+			  for (String windowHandle : driver.getWindowHandles())
+			  {
+			  if(!originalWindow.contentEquals(windowHandle)) 
+			  
+			  {
+			  driver.switchTo().window(windowHandle);
+			  driver.findElement(By.linkText("HOME")).click();
+			  driver.findElement(By.linkText("ALL COURSES")).click();
+			  driver.switchTo().window(originalWindow); 		 
+			  
+			  
+			  
+			  } 
+			  
+			  }
+			 
+			  
+			  
+				/*
+				 * driver.get("https://www.google.com/");
+				 * driver.findElement(By.name("q")).sendKeys("iphone12");
+				 * 
+				 * 
+				 * 
+				 
+			 
+			
 			 * System.setProperty("webdriver.gecko.driver",
 			 * "C:\\Users\\Rajkumar\\eclipse-workspace\\seleniumframeworkJava\\drivers\\geckodriver\\geckodriver.exe"
 			 * ); System.setProperty("webdriver.gecko.driver",
@@ -63,16 +95,20 @@ public class browserTest {
 			 * = new FirefoxDriver();
 			 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));*/	 	 
 	 	 
-			/*
-			 * driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys(
-			 * "seleniumClasses"); driver.findElement(By.id("alertbtn")).click();
-			 * System.out.println(driver.switchTo().alert().getText());
-			 * driver.switchTo().alert().accept(); //driver.switchTo().alert().dismiss();
-			 * JavascriptExecutor js = (JavascriptExecutor) driver;
-			 * js.executeScript("window.scrollBy(0,350)");
-			 * driver.findElement(By.id("mousehover")); Actions act= new Actions(driver);
-			 * act.moveToElement(driver.findElement(By.id("mousehover"))).perform();
-			 */
+			
+			  driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys("seleniumClasses"); 
+			  driver.findElement(By.id("alertbtn")).click();
+			  System.out.println(driver.switchTo().alert().getText());
+			  driver.switchTo().alert().accept(); 
+			  //driver.switchTo().alert().dismiss();
+			  
+			  JavascriptExecutor js = (JavascriptExecutor) driver;
+			  js.executeScript("window.scrollBy(0,350)");
+			  
+			  driver.findElement(By.id("mousehover")); 
+			  Actions act= new Actions(driver);
+			  act.moveToElement(driver.findElement(By.id("mousehover"))).perform();
+			 
 	
 	}
 
