@@ -18,6 +18,9 @@ import org.openqa.selenium.support.ui.Select;
 
 public class browserTest {
 	
+	public void test1() {
+		System.out.println("Training session");
+	}
 	
 
 	public static void main(String[] args)
