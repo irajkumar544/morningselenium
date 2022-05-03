@@ -1,13 +1,9 @@
 package seleniumframeworkJava;
 
-public class loop2 {
-	
-	
-	
-	
+public class hello {
 
 	public static void main(String[] args) {
-
+System.out.println("test");
 	}
 
 }
