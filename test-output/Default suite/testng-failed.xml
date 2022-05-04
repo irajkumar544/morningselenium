@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumframeworkJava.test1">
+      <class name="seleniumframeworkJava.webElement">
         <methods>
-          <include name="test2"/>
+          <include name="alertBox"/>
         </methods>
-      </class> <!-- seleniumframeworkJava.test1 -->
+      </class> <!-- seleniumframeworkJava.webElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
