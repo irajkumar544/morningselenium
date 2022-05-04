@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.Action;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,23 +26,24 @@ public class browserTest {
 		  System.setProperty("webdriver.chrome.driver",projectPath+"\\drivers\\chromeDriver\\chromedriver.exe"); 
 		  ChromeDriver driver  = new ChromeDriver(); 	
 		 
-	 	 driver.get("https://courses.letskodeit.com/practice");		 
-	 
-
-
-
-	 	 driver.manage().window().maximize();
+	 	 driver.get("https://courses.letskodeit.com/practice");	// it will open application
+	 	 driver.manage().window().maximize(); // Will maximize the browser window 
 	 	 
-	 	// driver.findElement(By.id("benzradio")).click();
+	 	 driver.findElement(By.id("hondaradio")).click();
+	 	 
+	 	 //xpath =   //tagne [@attributename='']
+	 	 
+	 	 
+	 	 driver.findElement(By.id("benzradio")).click();
 	 	 driver.findElement(By.xpath("//input[@id='benzradio']")).click();
 	 	 driver.findElement(By.xpath("//input[@id='bmwradio']")).click();
 	 	 driver.findElement(By.id("benzradio")).click();
-	 	// driver.findElement(By.id("bmwradio")).click();
 	 	 
-           driver.findElement(By.id("bmwradio")).click(); 	 
    
            Select drpCar=new Select(driver.findElement(By.id("carselect")));
            drpCar.selectByVisibleText("Benz");
+           
+           
 			
 			  Select SE=new Select(driver.findElement(By.id("multiple-select-example")));
 			  // List<WebElement> list = SE.getOptions(); 
@@ -79,21 +81,23 @@ public class browserTest {
 			 
 			  
 			  
+			
 				/*
 				 * driver.get("https://www.google.com/");
 				 * driver.findElement(By.name("q")).sendKeys("iphone12");
-				 * 
-				 * 
-				 * 
+				 */
+				  
+			
 				 
-			 
+			/* 
 			
 			 * System.setProperty("webdriver.gecko.driver",
 			 * "C:\\Users\\Rajkumar\\eclipse-workspace\\seleniumframeworkJava\\drivers\\geckodriver\\geckodriver.exe"
 			 * ); System.setProperty("webdriver.gecko.driver",
 			 * projectPath+"\\drivers\\geckodriver\\geckodriver.exe"); FirefoxDriver driver
 			 * = new FirefoxDriver();
-			 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));*/	 	 
+			 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20000));
+		*/	 	 
 	 	 
 			
 			  driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys("seleniumClasses"); 
