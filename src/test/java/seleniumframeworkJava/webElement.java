@@ -15,20 +15,22 @@ public class webElement {
 	public void radioSelect()
 	{
 		
-		String projectPath=System.getProperty("user.dir");
+		  String projectPath=System.getProperty("user.dir");
 		  System.out.println(projectPath);
 		  System.setProperty("webdriver.chrome.driver",projectPath+"\\drivers\\chromeDriver\\chromedriver.exe"); 
 		  ChromeDriver driver  = new ChromeDriver(); 	
 		 
 	 	 driver.get("https://courses.letskodeit.com/practice");	// it will open application
+	 	 
 	 	 driver.manage().window().maximize(); // Will maximize the browser window 
 	 	 
 	 	 driver.findElement(By.id("hondaradio")).click();
 	 	 
-	 	 //xpath =   //tagne [@attributename='']
+	 	 //xpath =   //tagname [@attributename='']
 	 	 
 	 	 
-	 	 driver.findElement(By.id("benzradio")).click();
+	 	 driver.findElement(By.id("hondaradio")).click();
+	 	 	 
 	 	 driver.findElement(By.xpath("//input[@id='benzradio']")).click();
 	 	 driver.findElement(By.xpath("//input[@id='bmwradio']")).click();
 	 	 driver.findElement(By.id("benzradio")).click();
@@ -54,6 +56,8 @@ public void dropDwon()
       //drpCar.selectByVisibleText("Benz");
 	  drpCar.selectByIndex(0);
 	  drpCar.selectByVisibleText("Honda");
+	  
+	  drpCar.selectByVisibleText("BMW");
 	  
 	  
 	  
@@ -129,6 +133,7 @@ public void newWindow()
 	  driver.switchTo().window(windowHandle);
 	  driver.findElement(By.linkText("HOME")).click();
 	  driver.findElement(By.linkText("ALL COURSES")).click();
+	  
 	  driver.switchTo().window(originalWindow); 		 
 	  
 	  
@@ -152,9 +157,11 @@ public void alertBox() {
 	
 	  driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys("Selenium classs"); 
 	  driver.findElement(By.id("alertbtn")).click();
+	  
 	  System.out.println(driver.switchTo().alert().getText());
 	  
 	  driver.switchTo().alert().accept(); 
+	  
 	  driver.switchTo().alert().dismiss();
 }
 
@@ -173,7 +180,7 @@ public void mousehower()
 	
 				
 				  JavascriptExecutor js = (JavascriptExecutor) driver;
-				 js.executeScript("window.scrollBy(0,350)");
+				  js.executeScript("window.scrollBy(0,350)");
 			
 	  
 	  driver.findElement(By.id("mousehover")); 

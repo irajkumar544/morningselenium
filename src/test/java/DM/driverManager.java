@@ -1,5 +1,6 @@
 package DM;
 
+import java.time.Duration;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
@@ -9,9 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Test
 public class driverManager {
 
 	public static void main(String[] args) {
@@ -20,9 +22,16 @@ public class driverManager {
 
         WebDriverManager.chromedriver().setup();        
         WebDriver driver = new ChromeDriver();
+        
+
+
        
        
-       driver.get("https://courses.letskodeit.com/practice");
+      // driver.get("https://courses.letskodeit.com/practice");
+       
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4000));
+
+
        driver.manage().window().maximize();
           driver.findElement(By.id("benzradio")).click();
           Select drpCar=new Select(driver.findElement(By.id("carselect")));
@@ -80,36 +89,10 @@ public class driverManager {
 				 
 			  
 			  
-			 // driver.quit();
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
+			  driver.quit();
+			  driver.close();
 			  
 		
-			  
-
-
-			  
-			  
-
-			 
-      
- 
-		
-          
- 
-    
-
-
 	}
 
 }
