@@ -8,7 +8,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+
+
+
+
 public class webElement {
+	
+	
 	
 
 @Test
@@ -119,7 +125,7 @@ public void newWindow()
 	  
 	  System.out.println(originalWindow); 
 	  
-	  assert driver.getWindowHandles().size() == 1;
+	//  assert driver.getWindowHandles().size() == 1;
 	  
 	  driver.findElement(By.id("openwindow")).click(); 
 	
