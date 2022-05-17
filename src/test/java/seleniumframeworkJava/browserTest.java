@@ -17,7 +17,7 @@ import org.testng.Reporter;
 
 public class browserTest {
 	
-	// testing comments git commit test testing mmmmmmmmmmmmmmm
+	// Testing JUST now
 
 	public static void main(String[] args)
 	{
