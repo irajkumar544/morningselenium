@@ -11,7 +11,7 @@ public class array {
 	public void arraytest()
 	{
 		
-		for (int i=0;i<a.length;i++)
+		for (int i=1;i<a.length;i++)
 		{
 			System.out.println(a[i]);
 			
@@ -22,7 +22,7 @@ public class array {
 	
 	public void arraytest2()
 	{
-		
+		//changes my raj
 		int a[]=new int[5]; 
 		a[0]=10; 
 		a[1]=20;  
