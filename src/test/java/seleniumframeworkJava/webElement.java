@@ -6,10 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-
-
-
 
 
 public class webElement {
@@ -17,7 +15,7 @@ public class webElement {
 	
 	
 
-@Test
+@Test (priority=1)
 	public void radioSelect()
 	{
 		
@@ -70,7 +68,7 @@ public void dropDwon()
 	
 }
 
-@Test
+@Test 
 public void multiSelect()
 {
 	String projectPath=System.getProperty("user.dir");
@@ -194,6 +192,12 @@ public void mousehower()
 	  act.moveToElement(driver.findElement(By.id("mousehover"))).perform();
 
 
+}
+@AfterTest
+public void closeBrowser() {
+	
+	ChromeDriver driver  = new ChromeDriver();
+	driver.close();
 }
 
 

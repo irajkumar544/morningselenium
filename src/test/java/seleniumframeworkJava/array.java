@@ -23,6 +23,8 @@ public class array {
 	public void arraytest2()
 	{       //   changes by Janki
 		//changes my raj
+		
+		// new changes
 		int a[]=new int[5]; 
 		a[0]=10; 
 		a[1]=20;  

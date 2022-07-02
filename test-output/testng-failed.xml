@@ -5,6 +5,7 @@
     <classes>
       <class name="seleniumframeworkJava.webElement">
         <methods>
+          <include name="closeBrowser"/>
           <include name="alertBox"/>
         </methods>
       </class> <!-- seleniumframeworkJava.webElement -->

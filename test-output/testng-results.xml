@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-06T17:03:42 IST" name="Default suite" finished-at="2022-05-06T17:04:52 IST" duration-ms="70004">
+  <suite started-at="2022-07-02T17:58:25 IST" name="Default suite" finished-at="2022-07-02T18:00:08 IST" duration-ms="103064">
     <groups>
     </groups>
-    <test started-at="2022-05-06T17:03:42 IST" name="Default test" finished-at="2022-05-06T17:04:52 IST" duration-ms="70004">
+    <test started-at="2022-07-02T17:58:25 IST" name="Default test" finished-at="2022-07-02T18:00:08 IST" duration-ms="103064">
       <class name="seleniumframeworkJava.webElement">
-        <test-method signature="alertBox()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:03:42 IST" name="alertBox" finished-at="2022-05-06T17:03:52 IST" duration-ms="10004" status="FAIL">
+        <test-method signature="alertBox()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:58:25 IST" name="alertBox" finished-at="2022-07-02T17:58:39 IST" duration-ms="14409" status="FAIL">
           <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
               <![CDATA[no such alert
-  (Session info: chrome=100.0.4896.127)
+  (Session info: chrome=103.0.5060.66)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'RAJKUMARYADAV', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'FC-IN-3HV0Y93', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bfe70a6dfbac5786b61aa4fc234254bf, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Rajkumar\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63297/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bfe70a6dfbac5786b61aa4fc234254bf]]>
+Command: [28847c7c9cc40f3163063fbcaf31cad9, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Rajkumar\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55652}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55652/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28847c7c9cc40f3163063fbcaf31cad9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=100.0.4896.127)
+  (Session info: chrome=103.0.5060.66)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'RAJKUMARYADAV', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'FC-IN-3HV0Y93', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bfe70a6dfbac5786b61aa4fc234254bf, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Rajkumar\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63297/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bfe70a6dfbac5786b61aa4fc234254bf
+Command: [28847c7c9cc40f3163063fbcaf31cad9, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Rajkumar\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55652}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55652/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28847c7c9cc40f3163063fbcaf31cad9
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -43,7 +43,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1110)
-at seleniumframeworkJava.webElement.alertBox(webElement.java:165)
+at seleniumframeworkJava.webElement.alertBox(webElement.java:169)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,30 +78,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alertBox -->
-        <test-method signature="checkBox()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:03:52 IST" name="checkBox" finished-at="2022-05-06T17:04:02 IST" duration-ms="9210" status="PASS">
+        <test-method signature="checkBox()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:58:39 IST" name="checkBox" finished-at="2022-07-02T17:58:52 IST" duration-ms="13331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method signature="dropDwon()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:04:02 IST" name="dropDwon" finished-at="2022-05-06T17:04:12 IST" duration-ms="10132" status="PASS">
+        <test-method signature="dropDwon()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:58:52 IST" name="dropDwon" finished-at="2022-07-02T17:59:06 IST" duration-ms="13489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDwon -->
-        <test-method signature="mousehower()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:04:12 IST" name="mousehower" finished-at="2022-05-06T17:04:22 IST" duration-ms="10080" status="PASS">
+        <test-method signature="mousehower()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:59:06 IST" name="mousehower" finished-at="2022-07-02T17:59:19 IST" duration-ms="13119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mousehower -->
-        <test-method signature="multiSelect()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:04:22 IST" name="multiSelect" finished-at="2022-05-06T17:04:30 IST" duration-ms="8613" status="PASS">
+        <test-method signature="multiSelect()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:59:19 IST" name="multiSelect" finished-at="2022-07-02T17:59:32 IST" duration-ms="12687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiSelect -->
-        <test-method signature="newWindow()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:04:30 IST" name="newWindow" finished-at="2022-05-06T17:04:43 IST" duration-ms="12424" status="PASS">
+        <test-method signature="newWindow()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:59:32 IST" name="newWindow" finished-at="2022-07-02T17:59:52 IST" duration-ms="20624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newWindow -->
-        <test-method signature="radioSelect()[pri:0, instance:seleniumframeworkJava.webElement@50b5ac82]" started-at="2022-05-06T17:04:43 IST" name="radioSelect" finished-at="2022-05-06T17:04:52 IST" duration-ms="9505" status="PASS">
+        <test-method signature="radioSelect()[pri:1, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T17:59:52 IST" name="radioSelect" finished-at="2022-07-02T18:00:06 IST" duration-ms="13605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- radioSelect -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumframeworkJava.webElement@759d26fb]" started-at="2022-07-02T18:00:06 IST" name="closeBrowser" finished-at="2022-07-02T18:00:08 IST" duration-ms="1764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- seleniumframeworkJava.webElement -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
